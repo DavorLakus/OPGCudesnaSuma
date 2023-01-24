@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="/navigation/header-footer-style.css" rel="stylesheet">
+    <link href="/home/home-style.css" rel="stylesheet">
+    <script src="/navigation/header-script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+
+
+    <title>OPG "Čudesna šuma"</title>
+</head>
+
+<body>
+    <div id="home-header-background">
+        <img src="/images/home-background.jpg">
+    </div>
+
+    <!-- -----------------------------------     HEADER    ----------------------------------- -->
+    <div id="navigation-container">
+        <header>
+            <div class="header">
+                <div id="hamburger" onclick="onTap();">
+                    &#9776;
+                </div>
+
+                <div id="logo">
+                    <a href="/home/home.html"><img src="/images/logo.png"></a>
+                </div>
+                <div>
+                    <div id="cart">
+                        <img src="/images/cart.png">
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navigation">
+
+                <ul id="menu">
+                    <li><a href="/home/home.html">Početna</a></li>
+                    <li class="dropdown">
+                        <a onclick="dropdownClicked()">Proizvodi<img src="/images/chevron-down.png"> </a>
+                        <ul id="dropmenu">
+                            <li><a href="/items/items.html">Plodovi zemlje</a></li>
+                            <li><a href="/items/items.html">Prirodna kozmetika</a></li>
+                            <li><a href="/items/items.html">Biljni proizvodi</a></li>
+                            <li><a href="/items/items.html">Sadnice</a></li>
+                            <li><a href="/items/items.html">Jaja</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/workshops/workshops.html">Radionice</a></li>
+                    <li><a href="/aboutus/aboutus.html">Naša misija</a></li>
+                    <li><a href="/contact/contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- -----------------------------------     IZDVOJENA PONUDA    ----------------------------------- -->
+
+    <div id="special-offer-container">
+        <h1>Iz ponude izdvajamo</h1>
+
+        <div class="special-offer-row-container">
+
+            <div class="special-offer-row">
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/jagoda.jpg">
+                        <h4>Jagode</h4>
+                        <h6>3.99€/kg</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/tofu.jpeg">
+                        <h4>Tofu</h4>
+                        <h6>5.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/jaja.jpeg">
+                        <h4>Jaja</h4>
+                        <h6>3.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/ulja.jpg">
+                        <h4>Esencijalno ulje - razni mirisi</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/cikla.png">
+                        <h4>Cikla</h4>
+                        <h6>2.69€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/jabuke.jpg">
+                        <h4>Jabuke</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/kompot.jpg">
+                        <h4>Kompot - trešnja</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/smokve.jpg">
+                        <h4>Suhe smokve</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/vodkef.jpg">
+                        <h4>Vodeni kefir</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/krumpir.jpeg">
+                        <h4>Krumpir</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/luk.jpg">
+                        <h4>Mladi luk</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+                <a>
+                    <div class="special-offer-item">
+                        <img src="/images/items/cesnjak.jpg">
+                        <h4>Češnjak</h4>
+                        <h6>2.99€</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------------     KATEGORIJE    ----------------------------------- -->
+
+    <div id="categories-container">
+        <div class="category">
+            <h5><a>Plodovi zemlje</a></h5>
+        </div>
+        <div class="category">
+            <h5><a>Prirodna kozmetika</a></h5>
+        </div>
+        <div class="category">
+            <h5><a>Biljni proizvodi</a></h5>
+        </div>
+        <div class="category">
+            <h5><a>Sadnice</a></h5>
+        </div>
+        <div class="category">
+            <h5><a>Jaja</a></h5>
+        </div>
+    </div>
+
+    <!-- -----------------------------------     NAŠA EDUKACIJA    ----------------------------------- -->
+
+    <div id="workshops-container">
+        <div id="workshops-head">
+            <div id="workshops-head-background">
+                <img src="/images/workshops/workshop1.jpg" alt="">
+            </div>
+            <h1>Naše radionice</h1>
+        </div>
+        <div id="workshops">
+            <a href="/workshops/workshops.html#workshops">
+                <div class="special-offer-item">
+                    <img src="/images/workshops/workshop2.jpg">
+                    <h4>Radionice</h4>
+                </div>
+            </a>
+            <a href="/workshops/workshops.html#events">
+                <div class="special-offer-item">
+                    <img src="/images/workshops/workshop3.jpg">
+                    <h4>Događaji</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- -----------------------------------     FOOTER    ----------------------------------- -->
+
+    <div class="footer-hero">
+        <img src="/images/footer-hero.webp" alt="">
+    </div>
+
+    <div class="footer-container">
+        <div>
+            <a href="/items/items.html">
+                <h4>Proizvodi</h4>
+            </a>
+            <ul>
+                <li><a href="/items/items.html">Plodovi zemlje</a></li>
+                <li><a href="/items/items.html">Sadnice</a></li>
+                <li><a href="/items/items.html">Zimnica</a></li>
+                <li><a href="/items/items.html">Začinsko bilje</a></li>
+                <li><a href="/items/items.html">Jaja</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Info</h4>
+            <ul>
+                <li><a href="/aboutus/aboutus.html">O nama</a></li>
+                <li><a href="/workshops/workshops.html#workshops">Radionice</a></li>
+                <li><a href="/workshops/workshops.html#events">Događaji</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Kontakt</h4>
+            <ul>
+                <li>+385 91 1750 421</li>
+                <li>Mario Romulić</li>
+            </ul>
+            <h4>Gdje smo?</h4>
+            <ul>
+                <li>Orlov put 41</li>
+                <li>Bilje, 31 327</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <h5>&copy; Davor Lakuš</h5>
+    </div>
+</body>
+
+</html>
